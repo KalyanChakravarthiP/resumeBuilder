@@ -97,10 +97,21 @@ option{
 	box-shadow:10px 10px 10px #ddd;
 }
 
+button{
+	display: block;
+	margin:0 auto;
+	padding:1%;
+	border:1px solid #1b75bc;
+	background:#1b75bc;
+	color:#fff;
+	box-shadow:10px 10px 10px #ddd;
+}
+
 .career{
 	width:70%;
 	margin:2%;
 	padding:2%;
 	border:1px solid #ddd;
 	box-shadow:10px 10px 10px #ddd;
+
 }

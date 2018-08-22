@@ -1,5 +1,3 @@
-//https://streammax.github.io/resumeBuilder/index.html
-
 fetch("database/info.json").then(response=>{
 	return response.json();
 }).then(myJson=>{
@@ -33,14 +31,14 @@ function profile(pro){
 // DataBase Upgrading
 openDB.onupgradeneeded = function() {
     var db = openDB.result;
-    var store = db.createObjectStore("mystore", {keyPath: "id"});
+    var store = db.createObjectStore("myStore", {keyPath: "id"});
     // var index = store.createIndex("NameIndex", ["data.name"]);
 };
 
 openDB.onsuccess=function(){
 	var db=openDB.result;
-	var tx=db.transaction(["mystore"], "readwrite");
-	var store=tx.objectStore("mystore");
+	var tx=db.transaction("myStore", "readwrite");
+	var store=tx.objectStore("myStore");
 
 	for (var i = 0; i < pro.length; i++) {
 	store.put({id:pro[i].id, name:pro[i].name,role:pro[i].role})
@@ -48,11 +46,9 @@ openDB.onsuccess=function(){
 }
 
 function getAllprofiles(callback){
-var trans=db.transaction("mystore", IDBTransaction.READ_ONLY);
-var store=trans.objectStore("mystore");
+var trans=db.transaction("myStore", IDBTransaction.READ_ONLY);
+var store=trans.objectStore("myStore");
 var items=[];
-var idbData=store.getAll;
-console.log(idbData);
 
 trans.oncomplete = function(evt) {  
         callback(items);
@@ -117,4 +113,6 @@ tx.oncomplete = function() {
 }
 
 }
+
+
 
