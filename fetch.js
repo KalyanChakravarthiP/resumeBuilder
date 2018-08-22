@@ -39,7 +39,7 @@ openDB.onupgradeneeded = function() {
 
 openDB.onsuccess=function(){
 	var db=openDB.result;
-	var tx=db.transaction("myStore", "readwrite");
+	var tx=db.transaction(["myStore"], "readwrite");
 	var store=tx.objectStore("myStore");
 
 	for (var i = 0; i < pro.length; i++) {
