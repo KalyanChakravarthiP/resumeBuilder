@@ -22,7 +22,7 @@ if(!window.indexedDB){
 
 
 
-var openDB=indexedDB.open("mydatabase",1);
+var openDB=indexedDB.open("myDatabase",3);
 
 
 
