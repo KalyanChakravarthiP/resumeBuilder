@@ -1,3 +1,5 @@
+//https://streammax.github.io/resumeBuilder/index.html
+
 fetch("database/info.json").then(response=>{
 	return response.json();
 }).then(myJson=>{
