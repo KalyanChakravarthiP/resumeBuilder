@@ -48,8 +48,8 @@ openDB.onsuccess=function(){
 }
 
 function getAllprofiles(callback){
-var trans=db.transaction("myStore", IDBTransaction.READ_ONLY);
-var store=trans.objectStore("myStore");
+var trans=db.transaction("mystore", IDBTransaction.READ_ONLY);
+var store=trans.objectStore("mystore");
 var items=[];
 
 trans.oncomplete = function(evt) {  
