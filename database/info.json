@@ -1,0 +1,24 @@
+{
+	"profile":[
+		{
+			"id":1,
+			"name":"HANUMAN KUMAR P",
+			"role":"Full-stack web developer"
+		},
+		{
+			"id":2,
+			"name":"SWAMI K",
+			"role":"Full-stack web developer"
+		},
+		{
+			"id":3,
+			"name":"PRANEETH V",
+			"role":"Full-stack web developer"
+		},
+		{
+			"id":4,
+			"name":"SURYA N",
+			"role":"Full-stack web developer"
+		}
+	]
+}

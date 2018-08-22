@@ -1,0 +1,106 @@
+.topHeader{
+	max-width:100%;
+	background:#1b75bc;
+	box-shadow:3px 3px 3px #ddd;
+	color:#fff;
+	padding:2%;
+	text-align: center;
+	font-weight:550;
+	font-size: 20px;
+	font-family:Arial;
+}
+
+h3{
+	color:#1b75bc;
+	text-align:center;
+}
+.a{
+	background:#1b75bc;
+	display:block;
+	padding:2%;
+	border-radius:5px;
+	color:#fff;
+	text-decoration: none;
+	box-shadow:3px 3px 3px #ddd;
+	text-align:center;
+}
+.subHeader{
+	max-width:100%;
+	background:#BFD0EC;
+	padding:0.2%;
+	text-align: right;
+}
+.icon{
+	width:50px;
+	height:auto;
+}
+/*Flex Parent*/
+.mainDiv{
+	display:flex;
+	flex-flow:row-wrap;
+	justify-content: center;
+}
+
+/*Flex Child*/
+.childDiv{
+	width:20%;
+	margin:2%;
+	padding:2%;
+	border:1px solid #1b75bc;
+	background:#fff;
+	border-radius: 20px;
+	box-shadow:3px 3px 3px #ddd;
+}
+
+.profileImg{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:200px;
+	height:auto;
+	border:1px solid #1b75bc;
+	border-radius:50%;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+
+
+/*CREATE.HTML*/
+
+input,select{
+	margin:0.5%;
+	padding:1%;
+	width:100%;
+}
+
+option{
+	word-wrap: break-word;
+}
+
+.parent{
+	display: flex;
+	flex-flow: row-wrap;
+	justify-content: center;
+}
+
+.child{
+	width:30%;
+	margin:2%;
+	padding:2%;
+	border:1px solid #ddd;
+	box-shadow:10px 10px 10px #ddd;
+}
+
+.career{
+	width:70%;
+	margin:2%;
+	padding:2%;
+	border:1px solid #ddd;
+	box-shadow:10px 10px 10px #ddd;
+}
