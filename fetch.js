@@ -33,14 +33,14 @@ function profile(pro){
 // DataBase Upgrading
 openDB.onupgradeneeded = function() {
     var db = openDB.result;
-    var store = db.createObjectStore("myStore", {keyPath: "id"});
+    var store = db.createObjectStore("mystore", {keyPath: "id"});
     // var index = store.createIndex("NameIndex", ["data.name"]);
 };
 
 openDB.onsuccess=function(){
 	var db=openDB.result;
-	var tx=db.transaction(["myStore"], "readwrite");
-	var store=tx.objectStore("myStore");
+	var tx=db.transaction(["mystore"], "readwrite");
+	var store=tx.objectStore("mystore");
 
 	for (var i = 0; i < pro.length; i++) {
 	store.put({id:pro[i].id, name:pro[i].name,role:pro[i].role})
