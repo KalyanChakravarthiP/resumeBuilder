@@ -51,6 +51,8 @@ function getAllprofiles(callback){
 var trans=db.transaction("mystore", IDBTransaction.READ_ONLY);
 var store=trans.objectStore("mystore");
 var items=[];
+var idbData=store.getAll;
+console.log(idbData);
 
 trans.oncomplete = function(evt) {  
         callback(items);
